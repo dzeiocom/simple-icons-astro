@@ -1,12 +1,12 @@
 {
-	"name": "lucide-astro",
-	"version": "0.262.1",
-	"description": "Get your Lucide icons right into your Astro project",
+	"name": "simple-icons-astro",
+	"version": "9.5.0",
+	"description": "Get your Simple icons right into your Astro project",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"homepage": "https://lucide-astro.dzeio.com",
-	"bugs": "https://github.com/dzeiocom/lucide-astro/issues",
-	"repository": "https://github.com/dzeiocom/lucide-astro.git",
+	"homepage": "https://github.com/dzeiocom/simple-icons-astro",
+	"bugs": "https://github.com/dzeiocom/simple-icons-astro/issues",
+	"repository": "https://github.com/dzeiocom/simple-icons-astro.git",
 	"scripts": {
 		"prepublish": "node src/build.js",
 		"build": "node src/build.js"
@@ -19,14 +19,14 @@
 	"sideEffects": false,
 	"keywords": [
 		"astro",
-		"lucide",
+		"simple-icons",
 		"icons",
 		"astro-component"
 	],
 	"author": "Aviortheking",
 	"license": "MIT",
 	"devDependencies": {
-		"lucide-static": "0.262.0"
+		"simple-icons": "9.5.0"
 	},
 	"peerDependencies": {
 		"astro": "^2.7.1"

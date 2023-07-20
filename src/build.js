@@ -1,5 +1,5 @@
 import fs from 'fs/promises'
-import Lucide from "lucide-static"
+import * as SimpleIcons from "simple-icons"
 
 // reset the dist folder
 console.log('deleting the dist folder')
@@ -10,11 +10,11 @@ await fs.mkdir('./dist')
 const template = await fs.readFile('./src/Template.astro', 'utf8')
 
 // funciton tht fill the template with the icon SVG
-function fillTemplate(icon) {
+function fillTemplate(icon, color = '') {
 	return template.replace(
 		'<!-- icon -->',
 		icon.replace(/<svg(?:.|\n)*?>((?:.|\n)*)<\/svg>/gm, '$1').replace(/  /g, '\t').trim()
-	)
+	).replace('fill="<!-- color -->"', color ? `fill="#${color}"` : '')
 }
 
 // copy the base layout
@@ -30,18 +30,25 @@ try {
 
 	// loop through each icons
 	console.log('creating every icons')
-	for (const name in Lucide) {
+	for (const name in SimpleIcons) {
 		// get its SVG
-		const icon = Lucide[name]
+		/** @type {import('simple-icons').SimpleIcon} */
+		const icon = SimpleIcons[name]
+		const svg = icon.svg
+		
 
 		// make the name PascalCase
-		const fullName = name.slice(0, 1).toUpperCase() + name.slice(1)
+		let fullName = name.slice(2)
+
+		if (/^\d/.test(fullName)) {
+			fullName = 'I' + fullName
+		}
 
 		// get the file path
 		const filePath = `./dist/${fullName}.astro`;
 
 		// compile the icon and write it out
-		await fs.writeFile(filePath, fillTemplate(icon), "utf-8");
+		await fs.writeFile(filePath, fillTemplate(svg, icon.hex), "utf-8");
 
 		// add the icon to the index
 		index += `export { default as ${fullName} } from './${fullName}.astro'\n`
