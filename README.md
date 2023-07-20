@@ -2,7 +2,7 @@
 
 Astro library to get the Simple Icons to the Astro Framework
 
-_We follow the Lucide versions for our release, with the exception of the patches_
+_We follow the Simple Icons versions for our release, with the exception of the patches_
 
 ## Installation
 
@@ -36,6 +36,6 @@ import { Github } from 'simple-icons-astro'
 
 ## Attributions
 
-Use the awesome icons from [Lucide](https://lucide.dev/)
+Use the awesome icons from [Simple Icons](https://simpleicons.org/)
 
-based on [astro-feather](https://github.com/gabrlyg/astro-feather)
+based on [lucide-astro](https://github.com/dzeiocom/lucide-astro)
