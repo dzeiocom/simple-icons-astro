@@ -4,7 +4,7 @@
 	"description": "Get your Simple icons right into your Astro project",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"homepage": "https://github.com/dzeiocom/simple-icons-astro",
+	"homepage": "https://simple-icons-astro.dzeio.com",
 	"bugs": "https://github.com/dzeiocom/simple-icons-astro/issues",
 	"repository": "https://github.com/dzeiocom/simple-icons-astro.git",
 	"scripts": {
