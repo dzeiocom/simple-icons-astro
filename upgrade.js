@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 /**
  * Javascript script linked to `upgrade.sh`
  */
-const upstreamPackage = 'lucide-static'
+const upstreamPackage = 'simple-icons'
 
 ;(async () => {
 	const pkg = JSON.parse(await fs.readFile('./package.json', 'utf8'))
