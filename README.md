@@ -1,5 +1,15 @@
 # Simple Icons Astro
 
+<a href="https://discord.gg/MMbUAptxPr">
+	<img src="https://img.shields.io/discord/1143555541004726272?color=%235865F2&label=Discord" alt="Discord Link">
+</a>
+<a href="https://github.com/dzeiocom/simple-icons-astro/stargazers">
+	<img src="https://img.shields.io/github/stars/dzeiocom/simple-icons-astro?style=flat-square" alt="Github stars">
+</a>
+<a href="https://github.com/dzeiocom/simple-icons-astro/actions/workflows/build_publish.yml">
+	<img src="https://img.shields.io/github/actions/workflow/status/dzeiocom/simple-icons-astro/build_publish.yml?style=flat-square" alt="Build passing" />
+</a>
+
 Astro library to get the Simple Icons to the Astro Framework
 
 _We follow the Simple Icons versions for our release, with the exception of the patches_
