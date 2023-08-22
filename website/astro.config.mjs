@@ -25,8 +25,5 @@ export default defineConfig({
 
 	// Customizable depending on goal
 	output: 'static',
-	site: 'https://lucide-astro.dzeio.com',
-	experimental: {
-		assets: true
-	}
+	site: 'https://simple-icons-astro.dzeio.com'
  })

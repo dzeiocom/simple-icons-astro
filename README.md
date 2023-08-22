@@ -1,17 +1,17 @@
-# lucide-astro
+# Simple Icons Astro
 
-Astro library to get the Lucide.dev icons to the Astro Framework
+Astro library to get the Simple Icons to the Astro Framework
 
-_We follow the Lucide versions for our release, with the exception of the patches_
+_We follow the Simple Icons versions for our release, with the exception of the patches_
 
 ## Installation
 
 ```
-npm i lucide-astro
+npm i simple-icons-astro
 ```
 
 ```
-yarn add lucide-astro
+yarn add simple-icons-astro
 ```
 
 ## Usage
@@ -20,11 +20,11 @@ You can import each icons individually like below
 
 ```astro
 ---
-import { WifiOff } from 'lucide-astro'
+import { Github } from 'simple-icons-astro'
 ---
 
 <Layout>
-	<WifiOff />
+	<Github />
 </Layout>
 ```
 
@@ -36,6 +36,6 @@ import { WifiOff } from 'lucide-astro'
 
 ## Attributions
 
-Use the awesome icons from [Lucide](https://lucide.dev/)
+Use the awesome icons from [Simple Icons](https://simpleicons.org/)
 
-based on [astro-feather](https://github.com/gabrlyg/astro-feather)
+based on [lucide-astro](https://github.com/dzeiocom/lucide-astro)
