@@ -1,6 +1,6 @@
 {
 	"name": "simple-icons-astro",
-	"version": "14.15.0",
+	"version": "15.0.0",
 	"description": "Get your Simple icons right into your Astro project",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
@@ -34,7 +34,7 @@
 	"author": "Aviortheking",
 	"license": "MIT",
 	"devDependencies": {
-		"simple-icons": "14.15.0"
+		"simple-icons": "15.0.0"
 	},
 	"peerDependencies": {
 		"astro": ">=2.7.1"
