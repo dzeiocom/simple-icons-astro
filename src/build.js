@@ -14,7 +14,7 @@ function fillTemplate(icon, color = '') {
 	return template.replace(
 		'<!-- icon -->',
 		icon.replace(/<svg(?:.|\n)*?>((?:.|\n)*)<\/svg>/gm, '$1').replace(/  /g, '\t').trim()
-	).replace('fill="<!-- color -->"', color ? `fill="#${color}"` : '')
+	).replace('<!-- color -->', color ? `#${color}` : '')
 }
 
 // copy the base layout
