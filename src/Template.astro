@@ -1,11 +1,15 @@
 ---
 import Layout from './.Layout.astro'
-export type { Props } from './index.d.ts'
+import type { Props } from './index.d.ts'
+
+delete Astro.props.slot;
+const { fill = '<!-- color -->', size = 24, ...props }:Props = Astro.props
 ---
 
 <Layout
-	fill="<!-- color -->"
-	{...Astro.props}
+size={size}
+fill={fill}
+{...props}
 >
 	<!-- icon -->
 </Layout>

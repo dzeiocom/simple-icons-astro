@@ -1,17 +1,16 @@
 ---
-export type { Props } from './index.d.ts'
+import type { Props } from './index.d.ts'
 
-const size = Astro.props.size
-delete Astro.props.size
+const { fill, size, ...props }:Props = Astro.props;
 ---
 
 <svg
-	xmlns="http://www.w3.org/2000/svg"
-	width={size ?? 24}
-	height={size ?? 24}
-	fill="currentColor"
-	viewBox="0 0 24 24"
-	{...Astro.props}
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox=`0 0 ${size} ${size}`
+  fill={fill}
+  {...props}
 >
 	<slot />
 </svg>
